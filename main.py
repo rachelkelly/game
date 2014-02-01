@@ -16,8 +16,6 @@ class Room(object):
 class BookRoomHaHa(Room):
 	def book(self):
 		print "ok, you ate the book."
-	# I don't really think this is going to do much.
-	# uhhhh except that it keeps printing this no matter what
 
 	def bookviewing(self):
 		print "you're in a room. who knows what kind yet?"
@@ -26,7 +24,9 @@ class BookRoomHaHa(Room):
 
 		if "book" in get_it_done:
 			print "ok booktest go"
-			book(get_it_done)
+			self.book()
+			#from stackoverflow
+			# http://stackoverflow.com/questions/5615648/python-call-function-within-class
 		elif "shelf" in get_it_done:
 			print "you see a few books I guess, I don't know, man!"
 		elif "thing2" in get_it_done:
@@ -35,10 +35,8 @@ class BookRoomHaHa(Room):
 			print "try again doof"
 
 
-class Book(Room):
-	# class or fn?
+class DoNotUseYet(Room):
 	pass
-	# pass cos who knows where this shit is goingggg
 
 
 crum = BookRoomHaHa()
