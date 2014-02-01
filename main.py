@@ -38,9 +38,5 @@ class BookRoomHaHa(Room):
 class DontDoIt(Room):
 	pass
 
-def maindo():
-	crum = BookRoomHaHa
-	crum.bookviewing()
-
-if __name__ == 'maindo':
-	maindo()
+crum = BookRoomHaHa()
+crum.bookviewing()
