@@ -35,10 +35,12 @@ class BookRoomHaHa(Room):
 			print "try again doof"
 
 
-class DoNotUseYet(Room):
+class DontDoIt(Room):
 	pass
 
+def maindo():
+	crum = BookRoomHaHa
+	crum.bookviewing()
 
-crum = BookRoomHaHa()
-
-crum.bookviewing()
+if __name__ == 'maindo':
+	maindo()
