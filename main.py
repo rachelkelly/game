@@ -52,6 +52,8 @@ class BookRoomHaHa(Room):
 		get_it_done = raw_input("> ")
 
 		if "book" in get_it_done:
+			# want to make this more abstractly, like, if VAR in get_it_done
+			# then do some kind of "do you or don't you" inv taking action
 			print "ok booktest go"
 			self.book()
 			#from stackoverflow
